@@ -13,35 +13,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
     <!--CSS Link-->
-    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
 </head>
 <body>
     <header>
         <h1>Ed Sheeran</h1>
 
-        <nav>
-            <ul>
+        <nav id="hamnav">
+
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+
+            <ul id="hamitems">
                 <li><a href="#">Home</a></li>
                 <li><a href="https://www.edsheeran.com/?frontpage=true" target="_blank">Ed Sheeran Website</a></li>
-                <li><a href="https://www.edsheeran.com/music" target="_blank">Ed Sheeran Music</a></li>
-                <li><a href="https://www.edsheeran.com/tour" target="blank">Ed Sheeran Tour Information</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Ed_Sheeran" target="_blank">Ed Sheeran Wikipedia</a></li>
+                <li><a href="https://www.edsheeran.com/music" target="_blank">Music</a></li>
+                <li><a href="https://www.edsheeran.com/tour" target="blank">Tour Information</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ed_Sheeran" target="_blank">Wikipedia Page</a></li>
             </ul>
         </nav>
 
-        <img src="images/equals_album_cover.jpg" alt="Ed Sheeran = Album Cover" title="Ed Sheeran = (equals) Album Cover"/>
+        <img class="cover" src="images/equals_album_cover.jpg" alt="Ed Sheeran = Album Cover" title="Ed Sheeran = (equals) Album Cover" width="500">
 
     </header>
 
-    <main>
+    <main class="container">
         <aside>
             <h2>Quick Facts</h2>
 
-            <img src="images/es_close-up.jpg" alt="Ed Sheeran Headshot Photo" title="Ed Sheeran Headshot Photo">
+            <img src="images/es_close-up.jpg" alt="Ed Sheeran Headshot Photo" title="Ed Sheeran Headshot Photo" width="500">
 
             <ul>
-                <li>Full Name:Edward (Ed) Christopher Sheeran</li>
+                <li>Full Name: Edward (Ed) Christopher Sheeran</li>
                 <li>Birthday: February 17, 1991 (age 31)</li>
                 <li>Occupation: Singer, Songwriter, Record Producer, Actor</li>
                 <li>Years Active: 2004-Present</li>
@@ -51,32 +55,32 @@
             </ul>
         </aside>
 
-        <article>
-            <section>
-                <h2>Albums and Top Songs</h2>
-                <ul>
-                    <li>Debut Album: + (pronounced “plus”) released in September 2011; containing his first hit single “The A Team”; album won 2012 Brit Awards for Best British Male Solo Artist and British Breakthrough Act</li>
-                    <li>Second Studio Album: x (pronounced “multiply”) released in June 2014; the single “Thinking Out Loud” earned him 2016 Grammy Awards for Song of the Year and Best Pop Solo Performance</li>
-                    <li>Third Studio Album: ÷ (pronounced “divide”) released in March 2017; multiple top charting singles from this album including “Shape of You”, “Castle on the Hill”, and “Perfect; Sheeran was named 2017 Global Recording Artist of the Year</li>
-                    <li>Fourth Studio Album: No. 6 Collaborations Project released in 2019; three number one singles from this album “I Don’t Care”, “Beautiful People”, and “Take Me Back to London”</li>
-                    <li>Fifth Studio Album: = (pronounced “equals”) released October 2021</li>
-                </ul>
-            </section>
+        
+        <section>
+            <h2>Albums and Top Songs</h2>
+            <ul>
+                <li>Debut Album: + (pronounced “plus”) released in September 2011; containing his first hit single “The A Team”; album won 2012 Brit Awards for Best British Male Solo Artist and British Breakthrough Act</li>
+                <li>Second Studio Album: x (pronounced “multiply”) released in June 2014; the single “Thinking Out Loud” earned him 2016 Grammy Awards for Song of the Year and Best Pop Solo Performance</li>
+                <li>Third Studio Album: ÷ (pronounced “divide”) released in March 2017; multiple top charting singles from this album including “Shape of You”, “Castle on the Hill”, and “Perfect; Sheeran was named 2017 Global Recording Artist of the Year</li>
+                <li>Fourth Studio Album: No. 6 Collaborations Project released in 2019; three number one singles from this album “I Don’t Care”, “Beautiful People”, and “Take Me Back to London”</li>
+                <li>Fifth Studio Album: = (pronounced “equals”) released October 2021</li>
+            </ul>
+        </section>
 
-            <div>
-                <img src="images/es_atlanta_concert_2018.JPEG" alt="Ed Sheeran on stage in Atlanta, Georgia, 2018 crowd photo" title="Ed Sheeran on stage in Atlanta, Georgia, 2018 crowd photo">
-                <img src="images/es_divide_tour.JPEG" alt="Ed Sheeran performing with guitar on stage" title="Ed Sheeran performing with guitar on stage">
-                <img src="images/es_atlanta_concert_2018 _2.JPEG" alt="Ed Sheeran on stage in Atlanta, Georgia, 2018 facing crowd" title="Ed Sheeran on stage in Atlanta, Georgia, 2018 facing crowd">
-                <img src="images/es_divide_tour2.JPEG" alt="Ed Sheeran performing on stage singing during divide tour" title="Ed Sheeran performing on stage singing during divide tour">
-            </div>
+        <div class="concert_photos">
+            <img src="images/es_atlanta_concert_2018.JPEG" alt="Ed Sheeran on stage in Atlanta, Georgia, 2018 crowd photo" title="Ed Sheeran on stage in Atlanta, Georgia, 2018 crowd photo" width="500">
+            <img src="images/es_divide_tour.JPEG" alt="Ed Sheeran performing with guitar on stage" title="Ed Sheeran performing with guitar on stage" width="500">
+            <img src="images/es_atlanta_concert_2018 _2.JPEG" alt="Ed Sheeran on stage in Atlanta, Georgia, 2018 facing crowd" title="Ed Sheeran on stage in Atlanta, Georgia, 2018 facing crowd" width="500">
+            <img src="images/es_divide_tour2.JPEG" alt="Ed Sheeran performing on stage singing during divide tour" title="Ed Sheeran performing on stage singing during divide tour" width="500">
+        </div>
 
-            <section>
-                <h2>Musical Style and Influences</h2>
-                <p>Ed Sheeran's musical style has been described as pop, folk-pop, soft rock, and R&B. Sheeran also incorporate rap into his music. Sheeran's earliest memories include listening to the records of Joni Mitchell, Bob Dylan and Elton John's Greatest Hits. According to Sheeran, the album that introduced him to music was Van Morrison's Irish Heartbeat. During his childhood his father took him to live concerts that would inspire his musical creations. These included seeing Eric Clapton at the Royal Albert Hall, Paul McCartney in Birmingham, and Bob Dylan. On the influence of Clapton, Sheeran states, "He's the reason I started playing guitar". He singled out Clapton's performance at the Party at the Palace in the grounds of Buckingham Palace, "I was eleven when I saw Eric Clapton play at the Queen's Golden Jubilee concert in June 2002. I remember him walking on stage with this rainbow-coloured Stratocaster and playing the first riff of 'Layla'. I was hooked. Two days later I bought a black Stratocaster copy for £30 that came with an amp. All I did for the next month was try to play that 'Layla' riff." </p>
+        <section class="influences">
+            <h2>Musical Style and Influences</h2>
+            <p>Ed Sheeran's musical style has been described as pop, folk-pop, soft rock, and R&B. Sheeran also incorporate rap into his music. Sheeran's earliest memories include listening to the records of Joni Mitchell, Bob Dylan and Elton John's Greatest Hits. According to Sheeran, the album that introduced him to music was Van Morrison's Irish Heartbeat. During his childhood his father took him to live concerts that would inspire his musical creations. These included seeing Eric Clapton at the Royal Albert Hall, Paul McCartney in Birmingham, and Bob Dylan. On the influence of Clapton, Sheeran states, "He's the reason I started playing guitar". He singled out Clapton's performance at the Party at the Palace in the grounds of Buckingham Palace, "I was eleven when I saw Eric Clapton play at the Queen's Golden Jubilee concert in June 2002. I remember him walking on stage with this rainbow-coloured Stratocaster and playing the first riff of 'Layla'. I was hooked. Two days later I bought a black Stratocaster copy for £30 that came with an amp. All I did for the next month was try to play that 'Layla' riff." </p>
 
-                <p>He has also cited The Beatles, Nizlopi and Eminem as his biggest musical influences. According to Sheeran, he had a stutter in his speech when he was younger, and he credited rapping along to Eminem's The Marshall Mathers LP for helping him stammer less. He was also inspired by "Cannonball" singer-songwriter Damien Rice in 2002, with Sheeran stating, "seeing him play this small club in Ireland, I was able to meet him, and he was unbelievably cool. I went straight home and started writing songs. I would not be doing what I'm doing now if he'd been a jerk." He also played the guitar to Westlife's Greatest hits album when he was ten, citing them as one of his influences. Sheeran collaborated with his idol Eric Clapton in April 2016, with Sheeran stating to People magazine, "I sang on Eric Clapton's album I Still Do. It's one thing having him on mine, but being on his, that's an honour that you can't ever pinpoint on how great that is. I did something for his record, and I was credited as 'Angelo Mysterioso,' appearing as a guest on Clapton's "I Will Be There", in addition to performing the song with Clapton on stage, and he did something for my record performing a guitar solo on "Dive" on Sheeran's album ÷ and was credited as 'Angelo Mysterioso.' Sheeran also cited Taylor Swift as one of his influences, suggesting in 2015 their respective success drives each other on.</p>
-            </section>
-        </article>
+            <p>He has also cited The Beatles, Nizlopi and Eminem as his biggest musical influences. According to Sheeran, he had a stutter in his speech when he was younger, and he credited rapping along to Eminem's The Marshall Mathers LP for helping him stammer less. He was also inspired by "Cannonball" singer-songwriter Damien Rice in 2002, with Sheeran stating, "seeing him play this small club in Ireland, I was able to meet him, and he was unbelievably cool. I went straight home and started writing songs. I would not be doing what I'm doing now if he'd been a jerk." He also played the guitar to Westlife's Greatest hits album when he was ten, citing them as one of his influences. Sheeran collaborated with his idol Eric Clapton in April 2016, with Sheeran stating to People magazine, "I sang on Eric Clapton's album I Still Do. It's one thing having him on mine, but being on his, that's an honour that you can't ever pinpoint on how great that is. I did something for his record, and I was credited as 'Angelo Mysterioso,' appearing as a guest on Clapton's "I Will Be There", in addition to performing the song with Clapton on stage, and he did something for my record performing a guitar solo on "Dive" on Sheeran's album ÷ and was credited as 'Angelo Mysterioso.' Sheeran also cited Taylor Swift as one of his influences, suggesting in 2015 their respective success drives each other on.</p>
+        </section>
+        
     </main>
 
     <footer>

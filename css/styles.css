@@ -1,0 +1,253 @@
+/* CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom CSS*/
+
+body{
+    background-color:#FFFDF8;
+    font-family: Helvetica, sans-serif;
+	color:#222121;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Courier Prime', monospace;
+}
+
+h1{
+	font-size: 2.5em;
+	text-align: center;
+	padding: 20px 0;
+	
+}
+
+h2{
+	font-size:1.75em;
+	text-align: center;
+	
+}
+
+/*Header*/
+
+#hamnav{
+	width:100%;
+	background:#981B10;
+}
+
+#hamitems a{
+	box-sizing: border-box;
+	display:block;
+	width:100%;
+	padding:10px;
+	text-decoration:none;
+	text-align:center;
+	color:#FFFDF8;
+}
+
+#hamitems a:hover {
+	background:#000000;
+}
+
+#hamnav label{
+	display:inline-block;
+	color:#FFFDF8;
+	background:#981B10;
+	font-size:1.2em;
+	padding:10px;
+	font-family:'Courier New', Courier, monospace;
+}
+
+#hamitems{
+	display: none;
+}
+
+#ham input:checked ~ #hamitems{
+	display:block;
+}
+
+#hamburger{
+	display: none;
+}
+
+.cover{
+	max-width:75%;
+	margin: 0 auto;
+	padding: 20px 0;
+    display: block;
+}
+
+/*Aside*/
+
+aside img{
+	max-width:60%;
+	display: block;
+	padding:10px 0;
+	margin: 0 auto;
+}
+
+aside ul{
+	margin: 5px 40px 40px 60px;
+}
+
+aside ul li{
+	padding: 5px 0;
+}
+
+/*Article*/
+
+section ul{
+	margin: 20px 30px;
+}
+
+section ul li{
+	padding: 5px 0;
+}
+
+.concert_photos{
+	padding-bottom: 30px;
+}
+
+.concert_photos img{
+	max-width:80%;
+	display:block;
+	padding:10px 0;
+	margin: 0 auto;
+}
+
+.influences{
+	margin: 0 30px 10px;
+}
+
+.influences p{
+	padding: 15px 0;
+}
+
+/*Footer*/
+
+footer{
+	background-color: #981B10;
+}
+
+h3{
+	font-size:.9em;
+	text-align: center;
+	padding: 20px 0;
+	color:#FFFDF8;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width:320px){
+	.container{
+		display:flex;
+		flex-direction: column;
+	}
+
+}
+
+/*Two columns at 768- put the aside and the albums section two columns*/
+@media screen and (min-width:768px){
+
+	.container{
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.cover{
+		max-width: 30%;
+	}
+
+	aside img{
+		max-width: 40%;
+	}
+
+	aside{
+		max-width:40%;
+	}
+
+	section{
+		max-width:50%;
+	}
+
+	.influences{
+		max-width: 75%;
+	}
+    
+}
+
+/*Three Columns at 992*/
+@media screen and (min-width:992px){
+
+	.container{
+		display:flex;
+		flex-direction: row;
+	}
+    
+	#hamitems{
+		display: flex;
+		justify-content: center;
+	}
+
+	#hamitems a{
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+
+	#hamnav label,
+	#hamburger{
+		display:none;
+	}
+
+	.cover{
+		max-width: 30%;
+	}
+
+	aside img{
+		max-width: 20%;
+	}
+
+}
