@@ -112,8 +112,8 @@ h2{
 	display: none;
 }
 
-.cover{
-	max-width:75%;
+.banner{
+	max-width:90%;
 	margin: 0 auto;
 	padding: 20px 0;
     display: block;
@@ -136,7 +136,7 @@ aside ul li{
 	padding: 5px 0;
 }
 
-/*Article*/
+/*Album section*/
 
 section ul{
 	margin: 20px 30px;
@@ -145,6 +145,15 @@ section ul{
 section ul li{
 	padding: 5px 0;
 }
+
+section img{
+	max-width: 40%;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Photos Section*/
 
 .concert_photos{
 	padding-bottom: 30px;
@@ -156,6 +165,8 @@ section ul li{
 	padding:10px 0;
 	margin: 0 auto;
 }
+
+/*Influences Section*/
 
 .influences{
 	margin: 0 30px 10px;
@@ -197,8 +208,8 @@ h3{
 		justify-content: center;
 	}
 
-	.cover{
-		max-width: 30%;
+	.banner{
+		max-width: 90%;
 	}
 
 	aside img{
@@ -242,12 +253,32 @@ h3{
 		display:none;
 	}
 
-	.cover{
-		max-width: 30%;
+	.banner{
+		max-width: 100%;
 	}
 
 	aside img{
-		max-width: 20%;
+		max-width: 40%;
 	}
 
+	section{
+		max-width:40%;
+	}
+
+	.influences{
+		max-width: 75%;
+	}
+
+	.concert_photos{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.concert_photos img{
+		max-width: 45%;
+	}
+
+	h1{
+		font-size: 3em;
+	}
 }
